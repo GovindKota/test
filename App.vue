@@ -4,6 +4,10 @@
     <HelloWorld msg="Welcome to Your Vue.js App"/>-->
     <Demo/>
     <Tableview/>
+    <forloop/>
+    <loginform/>
+    <fun/>
+  
   </div>
 </template>
 
@@ -12,14 +16,20 @@
 //import HelloWorld from './components/HelloWorld.vue'
 import Demo from './components/Demo.vue'
 import Tableview from './components/Tableview.vue'
+import forloop from './components/forloop.vue'
+import Loginform from './components/loginform.vue'
+import fun from './components/function.vue'
 export default {
   name: 'App',
   components: {
     //HelloWorld
     Tableview,
-    Demo
+    Demo,
+    forloop,
+    Loginform,
+   fun,
   
-  }
+  },
 }
 </script>
 
