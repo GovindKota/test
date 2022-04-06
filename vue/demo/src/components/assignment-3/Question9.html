@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1> form application Javascript</h1>
+    <form onsubmit="result(sample1,sample2,sample3,sample4)" >
+    
+    <label for="name">Name:</label>
+    
+    <input type="text" id="sample1" name="name" placeholder="enter your name" required><br><br>
+    
+    <lable for="email">Email:</lable>
+    
+    <input type="email" id="sample2" name="email" placeholder="enter your mail" required><br><br>
+    
+    <label for="age">age:</label>
+    
+    <input type="text" id="sample3" name="age" placeholder="enter your age" required><br><br>
+    
+    <label for="name">phone:</label>
+    
+    <input type="text" id="sample4" name="Contact" placeholder="enter your number" required><br><br>
+    
+    <button type="submit">SUBMIT</button>
+    
+    </form>
+    <script>
+
+function result(sample1, sample2, sample3, sample4) {
+
+document.write(document.getElementById("sample").value = sample1.value + " " + sample2.value + " " + sample3.value + " " + sample4.value);
+
+}
+    </script>
+    
+
+
+</body>
+
+</html>

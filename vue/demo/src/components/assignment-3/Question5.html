@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Invokable Function</h1>
+        <p id="demo"></p>
+    </body>
+    <script>
+    const myCompany = {
+  firstName:"Mantra",
+  lastName: "Technologies",
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+        }
+    }
+    document.getElementById("demo").innerHTML=myCompany.fullName();
+    </script>
+</html>

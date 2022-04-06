@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2> Using maps in Javascript </h2>
+    <p> create an array in map </p>
+    <p id="demo"></p>
+    <script>
+        var toys = new Map([
+            ["cars", 300],
+            ["bikes", 400],
+            ["buses", 200]
+        ]);
+        document.getElementById("demo").innerHTML = toys.get("bikes");
+    </script>
+</body>
+
+</html>
