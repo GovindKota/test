@@ -7,6 +7,7 @@
     <forloop/>
     <loginform/>
     <fun/>
+    <Btable />
   
   </div>
 </template>
@@ -19,6 +20,8 @@ import Tableview from './components/Tableview.vue'
 import forloop from './components/forloop.vue'
 import Loginform from './components/loginform.vue'
 import fun from './components/function.vue'
+import Btable from './components/Btable.vue'
+
 export default {
   name: 'App',
   components: {
@@ -28,6 +31,7 @@ export default {
     forloop,
     Loginform,
    fun,
+   Btable,
   
   },
 }

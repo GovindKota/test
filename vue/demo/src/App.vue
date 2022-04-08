@@ -11,6 +11,7 @@
     <Tableview2/>
     <Question6 ref="name" name="Govind">{{name}}</Question6>
     <button @click="func()">submit</button>
+    <B-form/>
   
   </div>
 </template>
@@ -25,7 +26,7 @@
 //import fun from './components/function.vue'
 //import callback from './components/callback.vue'
 //import Tableview2 from './components/Tableview2.vue'
-import Question6 from './components/Question6.vue'
+import botform from './components/Btable.vue'
 
 export default {
   name: 'App',
@@ -38,8 +39,8 @@ export default {
    //fun,
    //callback,
    //Tableview2,
-   Question6,
-  
+    botform
+
   },
 methods:{
   func() {

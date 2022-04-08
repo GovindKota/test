@@ -1,0 +1,78 @@
+<html>
+
+
+<body>
+
+<center>
+
+<div id="sample">
+
+<h1>This is will print in cookies</h1>
+
+
+<form name="sample" onsubmit="result()">
+
+<label for="Username :">Username :</label>
+
+<input type="text" name="name" id="sample1" placeholder="Enter Name"><br><br>
+
+<label for="Password :">Password :</label>
+
+<input type="password" name="password" id="sample2" placeholder="Enter password"><br><br>
+
+<button type="submit" onclick="Cookie()">Submit</button>
+
+</form>
+
+</div>
+
+</center>
+
+<script>
+
+function result() {
+
+document.write(document.sample.name.value + "<br>" + document.sample.password.value);
+
+}
+
+function Cookie(nam,psw) {
+
+let name = document.getElementById('sample1');
+
+let password = document.getElementById('sample2');
+
+today = new Date();
+
+var expire = new Date();
+
+expire.setTime(today.getTime() + 3600000 * 24 * 15);
+
+document.cookie = "Name=" + name.value + ";path=/" + ";expires=" + expire.toUTCString();
+
+document.cookie = "password=" + encodeURI(password.value) + ";path=/" + ";expires=" + expire.toUTCString();
+
+
+}
+
+window.onload = function () {
+
+var name1 = document.getElementById('sample1').value;
+
+var password1 = document.getElementById('sample2').value;
+
+document.getElementById('sample1').value = name1;
+
+document.getElementById('sample2').value = password1;
+
+}
+
+</script>
+
+</body>
+
+
+</html>
+
+
+

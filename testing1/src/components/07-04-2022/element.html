@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Javascript HTML DOM</h1>
+        <p>create new element</p>
+        <div id="demo">
+            <p id="demo1">this is new element</p>
+            <p id="demo2">this is new paragraph</p>
+        </div>
+        <button onclick="myFunction()">Remove Element</button>
+
+        <script>
+            const para=document.createElement("h1");
+            const node=document.createTextNode("This is Govind");
+            para.appendChild(node);
+            const element=document.getElementById("demo");
+            element.appendChild(para);
+
+            function myFunction() {
+document.getElementById("demo1").remove();
+}
+        </script>
+    </body>
+
+</html>
