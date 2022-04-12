@@ -1,32 +1,42 @@
 <template>
   <div>
-    <b-form-input v-model="text" placeholder="Enter country" required></b-form-input>
-    <button @click="getData()" class="btn btn-success">Click here!</button>
-    <b-container class="bv-example-row">
-      <b-card>
-        <b-card-text v-for="data1 in posts" :key="data1.id">
-          <b-row><b-col cols="2.5">University Name:{{ data1.name }}</b-col></b-row>
-          <b-row><b-col cols="1.5">Domains:{{ data1.domains }}</b-col>
-                 <b-col cols="9">Website :{{ data1.web_pages[0] }}</b-col>
+    <b-form-input v-model="text" placeholder="Enter country" required>
+    </b-form-input
+    ><br />
+
+    <b-button @click="getData1()" variant="info">Click here!</b-button
+    ><br /><br />
+
+    <b-card>
+      <b-card v-for="data1 in posts" :key="data1.id">
+        <b-container class="bv-example-row">
+          <b-row>
+            <b-col cols="3.5">University Name:{{ data1.name }}</b-col>
           </b-row>
-        </b-card-text>
+
+          <b-row>
+            <b-col cols="1.5">Domains:{{ data1.domains }}</b-col>
+
+            <b-col cols="10">Website :{{ data1.web_pages[0] }}</b-col>
+          </b-row>
+        </b-container>
       </b-card>
-    </b-container>
+    </b-card>
   </div>
 </template>
 
 <script>
 export default {
-  name: "QuestioN5",
+  name: "queS4",
 
   data() {
     return {
-      posts: "",
-      feilds: ["name", "domains", "state-province", "web_pages", "country"],
+      posts: " ",
     };
   },
+
   methods: {
-    async getData() {
+    async getData1() {
       try {
         let response = await fetch(
           "http://universities.hipolabs.com/search?country=" + this.text
@@ -40,7 +50,7 @@ export default {
   },
 
   created() {
-    this.getData();
+    this.getData1();
   },
 };
 </script>
