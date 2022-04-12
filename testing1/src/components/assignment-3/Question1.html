@@ -2,48 +2,48 @@
 
 <head>
 
-<form name="myform" method="post" onsubmit="myfun()">
+    <form name="myform" method="post" onsubmit="myfun()">
 
-<input type="text" name="word" placeholder="Enter Text" />
+        <input type="text" name="word" placeholder="Enter Text" />
 
-<button onclick="myfun()">Search</button>
+        <button onclick="myfun()">Search</button>
 
-</form>
+    </form>
 
 </head>
 
 <body>
 
-<p id="root"></p>
+    <p id="root"></p>
 
-<script>
+    <script>
 
-function myfun() {
+        function myfun() {
 
-const array = ["agile", "crm", "mantra", "technologies", "500apps", "infinity"];
+            const array = ["agile", "crm", "mantra", "technologies", "500apps", "infinity"];
 
-const substring = document.myform.word.value;
+            const substring = document.myform.word.value;
 
-const match = array.find(element => {
+            const match = array.find(element => {
 
-if (element.includes(substring)) {
+                if (element.includes(substring)) {
 
 
-return true;
+                    return true;
 
-}
+                }
 
-});
+            });
 
-document.write(match);
+            document.write(match);
 
-if (match !== undefined) {
+            if (match !== undefined) {
 
-}
+            }
 
-}
+        }
 
-</script>
+    </script>
 
 </body>
 

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <body>
+            
+            <button @click="opens()">Opens</button>
+            <p id="demo"></p>
+            
+            <button @click="pending()">Pending</button>
+            <p id="demo1"></p> <br>
+    
+            <p id="demo2"></p>
+            
+            <button @click="closed()">Closed</button>
+            <p id="demo3"></p>
+    
+            
+            <script>
+            var data= [
+            
+            {
+            
+            email: "Eliseo@gardner.biz",
+            
+            id: 1,
+            
+            name: "id labore ex et quamlaborum",
+            
+            status: "open",
+            
+            },
+            
+            
+            {
+            
+            email: "Jayne_Kuhic@sydney.com",
+            
+            id: 2,
+            
+            name: "quovero reiciendis velit similiqueearum",
+            
+            status: "pending",
+            
+            },
+            
+            
+            {
+            
+            email: "Nikita@garfield.biz",
+            
+            id: 3,
+            
+            name: "odioadipisci rerum autanimi",
+            
+            status: "closed",
+            
+            },
+            
+            
+            {
+            
+            email: "Lew@alysha.tv",
+            
+            id: 4,
+            
+            name: "alias odio sit",
+            
+            status: "pending",
+            
+            },
+        ]
+opendata="",
+
+pendingdata="",
+
+
+pendingdata1= "",
+
+
+closeddata= "",
+
+
+text= "",
+
+
+function opens() {
+
+document.write("demo").opendata = this.data[0];
+}
+
+function pending() {
+
+    document.write("demo1").pendingdata1 = this.data[1];
+
+
+    document.write("demo2").pendingdata2 = this.data[3];
+}
+
+function closed() {
+    document.write("demo3").closeddata = this.data[2];
+}                   
+            
+            </script>
+            </body>
+            </html>
+            
+            
+            
+            
+            

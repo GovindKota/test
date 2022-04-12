@@ -1,0 +1,53 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1">
+    <label for="hi">enter name:</label>
+    <input type="text" id="id1" name="hi">
+    <button onsubmit="name()">click</button>
+</form>
+    <script>
+        function name(){
+            var x= document.write(document.form1.id1.value)
+           
+        };
+    </script>
+</body>
+</html>-->
+
+ <!DOCTYPE html>
+
+<head>
+<p>Question-10</p>
+
+</head>
+
+<body>
+
+<form name="myform" method="post" onsubmit="validateform()" >
+
+Enter Your First Name: <input type="text" name="FirstName" required><br/> <br>
+
+Enter Your Last Name: <input type="text" name="LastName" placeholder="Enter LastName" required><br/>
+
+<input type="submit" value="Login">
+
+</form>
+
+</body>
+
+<script>
+
+function validateform(){
+
+document.write("FullName: "+"</br>"+ document.myform.FirstName.value+" "+document.myform.LastName.value);
+
+
+}
+
+</script>
+
+</html>

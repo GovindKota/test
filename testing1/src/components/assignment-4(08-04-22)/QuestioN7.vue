@@ -24,12 +24,8 @@ txt: "",
 };
 
 },
-
-
 mounted() {
-axios
-.get("https://agilecrm.com/")
-.then((response) => (this.txt = response));
+axios.get("https://agilecrm.com/").then((response) => (this.txt = response));
 
 },
 

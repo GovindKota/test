@@ -10,6 +10,8 @@
    <Tableview2 />
    <Demo/>
    <cookies/>
+   <QuestioN5/>
+   <Question6/>
   </div>
 </template>
 
@@ -22,7 +24,7 @@
 //import QuestioN3 from './components/assignment-4(08-04-22)/QuestioN3.vue'
 //import QuestioN7 from './components/assignment-4(08-04-22)/QuestioN7.vue'
 //import Demo from './components/Demo.vue'
-import Cookies from './components/07-04-2022/Cookies.vue'
+//import Cookies from './components/07-04-2022/Cookies.vue'
 export default {
   name: 'App',
   components: {
@@ -33,7 +35,7 @@ export default {
     //Tableview2,
    //QuestioN7,
    //Demo,
-   Cookies,
+   //Cookies,
   }
 }
 </script>
