@@ -1,23 +1,44 @@
 <template>
   <div>
     <h1 align="center">This is Question 1</h1>
-
+<b-container>
     <b-form-select v-model="value" :options="countries"></b-form-select><br><br>
-
     <b-button variant="warning" @click="getData">Get Data</b-button><br><br>
-
+<b-pagination v-model="currentPage" :total-rows="rows" :per-page="perPage" aria-controls="mytable"></b-pagination>
+ <b-row cols-md="7">
+   <b-table id="mytable" :per-page="perPage" :current-page="currentPage" striped hover :items="items">
     <b-table striped hover :items="items">
-      <p>university_name:-- {{ value.university_name }}</p>
+  <b-col><p>university_name: {{ value.university_name }}</p></b-col>
 
-      <p>domains:{{ value.domains }}</p>
-
-      <p @click="redirect(value.website_url)">
-        website_url:{{ value.website_url }}
-      </p>
-
-      <p>state_province:{{ value.state_province }}</p>
+<b-col><p>domains: {{ value.domains }}</p></b-col>
+<a :href="value.website_url" _target="blank">{{value.website_url}}</a>
+      <b-col><p>state_province:{{ value.state_province }}</p></b-col>
     </b-table>
+    </b-row>
+</b-container>
+<b-container mt=5>
+  <div class="row mt=3">
+    <div class="col-md-3">
+      <div class="p-2 alert alert-secoundary">
+        <h3>coutry list </h3>
+        <draggable class="list-group kanban-column" group="tasks" >
+<div class="list-group-item" v-for="value in items" :key="value.domains">
+<b-card id="sample2" v-for="value in items" :key="value.domains" class="mb-2">
+<b-card-text>university_name: {{ value.university_name }} </b-card-text>
+<p>domains: {{ value.domains }}</p>
+<p @click="redirect(value.website_url)">
+website_url: {{ value.website_url }}</p>
+<p>state_province: {{ value.state_province }}</p>
+</b-card>
+</div>
+</draggable>
+</div>
   </div>
+  <div class="col-md-3">
+<div class="p-2 alert alert-secondary">
+  <h3>country list2</h3>
+  <draggable class="list-group kanbam-column" :list="countries" :id="sample" group="tasks">
+    <div class="list-group-item" v-for="value in items" :key="value.domains">
 </template>
 
 <script>

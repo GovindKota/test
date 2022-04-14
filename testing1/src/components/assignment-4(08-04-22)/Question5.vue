@@ -3,10 +3,8 @@
     <b-form-input v-model="text" placeholder="Enter country" required>
     </b-form-input
     ><br />
-
     <b-button @click="getData1()" variant="info">Click here!</b-button
     ><br /><br />
-
     <b-card>
       <b-card v-for="data1 in posts" :key="data1.id">
         <b-container class="bv-example-row">
