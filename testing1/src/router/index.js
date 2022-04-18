@@ -9,6 +9,7 @@ import Router from 'vue-router'
 //import PropS from '../components/PropS(parent)'
 //import EmitParent from '../components/EmitParent'
 //import QuestioN4a from '../components/assignment-1/QuestioN4a'
+<<<<<<< HEAD
 //import QuestioN5a from '../components/assignment-1/QuestioN5a'
 //import QueN1 from '../components/assignment-7/QueN1.vue'
 //import QueN2 from '../components/assignment-7/QueN2.vue'
@@ -16,6 +17,9 @@ import Router from 'vue-router'
 //import QueN4 from '../components/assignment-7/QueN4'
 //import FetchApi from '../components/FetchApi.vue'
 import FetchApi from '../components/'
+=======
+import QuestioN5a from '../components/assignment-1/QuestioN5a'
+>>>>>>> 244b63e1a78664e24eac52d5e745182cfbe5f3b1
 Vue.use(Router)
 const routes=[
     
@@ -67,6 +71,7 @@ const routes=[
    //    name:"Question4",
    //    component:QuestioN4a
    // }
+<<<<<<< HEAD
    // 
    // {
    //    path:'/Q1',
@@ -90,6 +95,13 @@ const routes=[
       components:FetchApi
 
    },
+=======
+   {
+      path:'/QuestioN5',
+      name:"QuestioN5",
+      component:QuestioN5a
+   }
+>>>>>>> 244b63e1a78664e24eac52d5e745182cfbe5f3b1
 
 ]
 let router =new Router ({routes})
