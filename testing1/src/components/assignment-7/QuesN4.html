@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Array or Not</h1>
+    </body>
+</html>
+<script>
+    var x= function(input) {
+  if (toString.call(input) === "[object Array]")
+    return true;
+  return false;   
+    };
+console.log(x('w3resource'));
+console.log(x([1, 2, 4, 0]));
+</script>

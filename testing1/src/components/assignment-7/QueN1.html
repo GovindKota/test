@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Function calls</h2>
+        <p id="demo"></p>
+    </body>
+</html>
+<script>
+    const circle = {
+radius: 20,
+diameter() {
+  return this.radius * 2;
+},
+perimeter: () => 2 * Math.PI * this.radius,
+};
+
+console.log(circle.diameter());
+console.log(circle.perimeter());
+</script>
