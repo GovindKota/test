@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 
     <form name="myform" method="post" onsubmit="myfun()">
@@ -19,11 +18,8 @@
         function myfun() {
 
             const array = ["agile", "crm", "mantra", "technologies", "500apps", "infinity"];
-
             const substring = document.myform.word.value;
-
             const match = array.find(element => {
-
                 if (element.includes(substring)) {
                     return true;
 
@@ -32,7 +28,6 @@
             });
 
             document.write(match);
-
             if (match !== undefined) {
 
             }

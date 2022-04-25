@@ -5,7 +5,7 @@
       <b-button @click="myfun">Map</b-button>
       <b-button @click="fun">ForEach</b-button>
       <b-button @click="func()">Filter</b-button>
-      <b-button @click="f1()">Find</b-button>
+      <b-button @click="funct()">Find</b-button>
     <!-- </form> -->
   </div>
 </template>
@@ -20,8 +20,8 @@ export default {
   },
   methods: {
     myfun() {
-      var res = this.array.map(r=>{
-        return r.name
+      var res = this.array.map(g=>{
+        return g.name
       })
       console.log(res);
     },
@@ -31,17 +31,17 @@ fun(){
   })
 },
 func(){
-   var value = this.array.filter((row)=>{
-     return row.includes(this.res);
+   var value = this.array.filter((govi)=>{
+     return govi.includes(this.res);
    })
    console.log(value);
-}
-    },
-    f1(){
+},
+    funct(){
       var value=this.array.find((row)=>{
-          return row.includes("ag");
+          return row.includes("m");
       })
       console.log(value);
     }
 }
+};
 </script>

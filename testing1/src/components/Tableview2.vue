@@ -39,23 +39,16 @@ export default {
 table {
 
 font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-
 border-collapse: collapse;
-
 width: 50%;
-
 background-color: white;
 
 }
 
 td,
-
 th {
-
 border: 5px solid #dddddd;
-
 text-align: left;
-
 padding: 8px;
 
 }
