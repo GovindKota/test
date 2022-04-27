@@ -1,15 +1,13 @@
 <template>
   <div>
-    <h1 align="center">This is Question 6</h1>
+    <h1 align="center"> universities data form each country</h1>
     <b-form-select v-model="value" :options="countries"></b-form-select><br /><br />
-    <b-button variant="primary" @click="getData">Get Data</b-button>
+    <b-button variant="primary" @click="getData()">Get Data</b-button>
     <b-card v-for="value in items" :key="value.domains">
       <b-card-text>{{ value.university_name }} </b-card-text>
       <p>{{ value.domains }}</p>
        <p>{{ value.state_province }}</p>
-      <!-- <p @click="redirect(value.website_url)">
-        website_url:--{{ value.website_url }} 
-      </p>-->
+       <b-link href="#website_url" @click="redirect(value.website_url)">website_url:--{{ value.website_url }} </b-link>
     </b-card>
   </div>
 </template>

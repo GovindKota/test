@@ -1,20 +1,10 @@
 <template>
   <div>
     <h1 align="center">This is Question 1</h1>
-
-    <b-form-select v-model="value" :options="countries"></b-form-select
-    ><br /><br />
-
+    <b-form-select v-model="value" :options="countries"></b-form-select><br /><br />
     <b-button variant="warning" @click="getData">Get Data</b-button><br /><br />
-
     <center>
-      <input
-        type="text"
-        name="search"
-        id="search"
-        v-on:keyup="search()"
-        placeholder="search .."
-      />
+      <input type="text" name="search" id="search" v-on:keyup="search()" placeholder="search .."/>
     </center>
     <b-table striped hover :items="items" id="mytable">
       <p>university_name:-- {{ value.university_name }}</p>

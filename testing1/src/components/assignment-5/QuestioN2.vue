@@ -39,6 +39,8 @@ website_url: {{ value.website_url }}</p>
   <h3>country list2</h3>
   <draggable class="list-group kanbam-column" :list="countries" :id="sample" group="tasks">
     <div class="list-group-item" v-for="value in items" :key="value.domains">
+    </div>
+  </draggable>
 </template>
 
 <script>
