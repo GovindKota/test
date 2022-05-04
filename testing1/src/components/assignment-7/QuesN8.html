@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <h1>Display the colors</h1>
-        <p id="demo"></p>
-    </body>
+<body>
+    <h1>Display the colors</h1>
+    <p id="demo"></p>
+</body>
 </html>
 <script>
-var color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
-function Ordinal(n)
- {
- var o = ["th","st","nd","rd"],
- x = n%100;
- return x+(o[(x-20)%10]||o[x]||o[0]);
- }
+    var color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
+    function Ordinal(n) {
+        var o = ["th", "st", "nd", "rd"],
+            x = n % 100;
+        return x + (o[(x - 20) % 10] || o[x] || o[0]);
+    }
+    for (n = 0; n < color.length; n++) {
+        var ordinal = n + 1;
 
-for(n = 0; n < color.length; n++){
- var ordinal = n + 1;
-
- var output = (Ordinal(ordinal) + " choice is " + color[n] + ".");
-console.log(output);
-}
+        var output = (Ordinal(ordinal) + " choice is " + color[n] + ".");
+        console.log(output);
+    }
 </script>

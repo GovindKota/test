@@ -15,16 +15,11 @@ export default {
   methods: {
     func() {
      const doubled = this.arraynum.reduce((accumulator, currentValue) => {
-
-accumulator.push(currentValue * 2);
-
-return accumulator;
-
-}, []);
-
-document.write("input : " + this.arraynum),
-
-document.write("</br>Output : " + doubled);
+           accumulator.push(currentValue * 2);
+              return accumulator;
+        }, []);
+         document.write("input : " + this.arraynum),
+         document.write("</br>Output : " + doubled);
     },
   },
 };

@@ -1,22 +1,19 @@
 <template>
   <div>
-    <p>msg:{{ msg }}</p>
-
+    <p>Number:{{ num }}</p>
     <p>name:{{ name }}</p>
   </div>
 </template>
-
 <script>
 export default {
   props: {
-    msg: String,
+    num: String,
     name: String,
   },
-
   methods: {
     fun() {
       document.write("Hello");
     },
   },
 };
-</script>
+</script> 

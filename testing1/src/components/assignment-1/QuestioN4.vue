@@ -6,6 +6,7 @@
 </template>
 <script>
 export default {
+    name:"PropsChild",
     props:{
         msg: String,
         name: String,

@@ -1,6 +1,7 @@
 <template>
     <div>
-{{data1}}
+        <h1 align="center">Question10</h1>
+        {{data1}}
     </div>
 </template>
 <script>
@@ -17,18 +18,14 @@ data1:this.filter_array([NaN, 0, 15, false, -22, '', undefined, 47, null])
             arr_length = test_array ? test_array.length : 0,
             resIndex = -1,
             result = [];
-
         while (++index < arr_length) {
             var value = test_array[index];
-
             if (value) {
                 result[++resIndex] = value;
             }
         }
-
         return result;
     }
-
     }
 })
 </script>

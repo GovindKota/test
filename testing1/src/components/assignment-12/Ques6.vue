@@ -1,7 +1,7 @@
 <template>
   <div>
-      <h1 align="center">Question6</h1>
-      <button @click="func()">ClickMe</button>
+    <h1 align="center">Question6</h1>
+    <button @click="func()">ClickMe</button>
   </div>
 </template>
 <script>
@@ -18,10 +18,10 @@ export default {
     func() {
       for (var i = 0; i < this.a.length; i++) {
         for (var j = i; j < this.a.length; j++) {
-          if (this.a[i] == this.a[j])this. c++;
+          if (this.a[i] == this.a[j]) this.c++;
           if (this.b < this.c) {
             this.b = this.c;
-           this. item =this. a[i];
+            this.item = this.a[i];
           }
         }
         this.c = 0;

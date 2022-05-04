@@ -13,7 +13,7 @@ export default {
   name: "QueS2",
   data() {
     return {
-
+      
     }
   },
   methods: {

@@ -35,7 +35,7 @@ export default {
    // HelloWorld,
    //QuestioN3
     //Btable,
-    //Loginform,
+   //Loginform,
     //Tableview2,
    //QuestioN7,
    //Demo,

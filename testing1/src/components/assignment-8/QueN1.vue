@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <form name="myform" method="post" onsubmit="myfun()">-->
+    <!-- <form name="myform" method="post" onsubmit="myfun()"> -->
        <input type="text"  v-model="res" placeholder="Enter Text" />
       <b-button @click="myfun">Map</b-button>
       <b-button @click="fun">ForEach</b-button>

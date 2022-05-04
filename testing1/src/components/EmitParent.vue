@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Emitchild @Clickme="fun"></Emitchild>
+        <Emitchild @hi="fun"></Emitchild>
     </div>
 </template>
 <script>
@@ -13,7 +13,7 @@ export default {
     },
     methods:{
         fun(){
-            document.write("Hi this is Govind");
+            document.write("Hi ");
         },
     },
 };

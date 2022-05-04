@@ -13,7 +13,6 @@ export default {
             posts:"",
             fields:["name", "domains", "state-province", "web-pages"],
         }
-        
     },
     methods:{
      async getData() {

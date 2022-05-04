@@ -19,9 +19,10 @@ export default {
           x = n % 100;
         return x + (o[(x - 20) % 10] || o[x] || o[0]);
       }
-      for (this.n = 0;this. n <this. color.length;this.n++) {
-        var ordinal =this.n + 1;
-        var output = Ordinal(ordinal) + " choice is " + this.color[this.n] + ".";
+      for (this.n = 0; this.n < this.color.length; this.n++) {
+        var ordinal = this.n + 1;
+        var output =
+          Ordinal(ordinal) + " choice is " + this.color[this.n] + ".";
         console.log(output);
       }
     },

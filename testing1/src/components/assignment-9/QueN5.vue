@@ -13,6 +13,5 @@ name:"EmiTchild",
                this.$emit("Clickme");
            }
          },
-         
         }
 </script>

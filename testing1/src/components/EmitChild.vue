@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button  @click="func">Click me!</button>
+        <button  @click="func()">Click me!</button>
     </div>
 </template>
 <script>
@@ -10,9 +10,8 @@ name:"EmiTchild",
         },
         methods:{
            func() {
-               this.$emit("Clickme");
+               this.$emit("hi");
            }
          },
-         
         }
 </script>

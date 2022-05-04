@@ -7,6 +7,7 @@
 <script>
 import Props from './QuestioN5a.vue'
 export default {
+    name:"PropsParent",
 components:{
     Props,
 },

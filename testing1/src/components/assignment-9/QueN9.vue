@@ -9,7 +9,7 @@ export default {
     name:"SpreaDoperators",
     data() {
         return{
-            array:["Govind","Mani","Nithya"],
+            array:["Govind","Manikanta","Nithya"],
             array1:["Srinu","Rajubabu","Laxmi"],
         }
     },

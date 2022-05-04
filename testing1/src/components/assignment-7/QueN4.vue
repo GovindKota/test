@@ -11,12 +11,12 @@ export default {
     methods:{
         func(){
             var x= function(input) {
-  if (toString.call(input) === "[object Array]")
+if (toString.call(input) === "[object Array]")
     return true;
-  return false;   
+    return false;   
     };
-console.log(x('w3resource'));
-console.log(x([1, 2, 4, 0]));
+       console.log(x('w3resource'));
+       console.log(x([1, 2, 4, 0]));
         }
     }
 }
